@@ -92,8 +92,9 @@ Card(modifier=modifier) {
 @Preview
 @Composable
 private fun AffirmationCardPreview() {
-    AffirmationCard(Affirmation(R.string.affirmation1, R.drawable.image1))
-}
+    //AffirmationCard(Affirmation(R.string.affirmation1, R.drawable.image1))
+    AffirmationList(affirmationList = Datasource().loadAffirmations(),
+    )}
 
 @Composable
 fun AffirmationList(affirmationList: List<Affirmation>,modifier: Modifier=Modifier) {
